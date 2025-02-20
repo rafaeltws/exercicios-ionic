@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Média escolar <ion-icon name="school-sharp"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Nota Um" type="number" placeholder="000" [(ngModel)]="notaUm"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Nota Dois" type="number" placeholder="000" [(ngModel)]="notaDois"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Nota três" type="number" placeholder="000" [(ngModel)]="notaTres"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Nota quatro" type="number" placeholder="000" [(ngModel)]="notaQuatro"></ion-input>
+  </ion-item>
+  <ion-button color="tertiary" expand="full" fill="outline" (click)="calcularMedia()">Calcular</ion-button>
+  <h3>{{media}}</h3>
+  <h3>{{mensagem}}</h3>
+</ion-content>

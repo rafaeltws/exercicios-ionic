@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>
+      Converter Temperatura
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Temperatura em °C" type="number" placeholder="000" [(ngModel)]="tempCelsius"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button color="success" expand="block" (click)="converterUm()">Celsius => Fahrenheit</ion-button>
+  <h2>{{tempFahrenheit}}</h2>
+  <br>
+  <ion-item>
+    <ion-input label="Temperatura em °C" type="number" placeholder="000" [(ngModel)]="fahrenheitTemp"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button color="danger" expand="block" (click)="converterDois()">Fahrenheit => Celsius</ion-button>
+  <h2>{{celsiusTemp}}</h2>
+</ion-content>

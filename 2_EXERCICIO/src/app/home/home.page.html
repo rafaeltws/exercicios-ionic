@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      Triangulo <ion-icon name="caret-up-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Lado Um" type="number" placeholder="000" [(ngModel)]="ladoUm"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Lado Dois" type="number" placeholder="000" [(ngModel)]="ladoDois"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Lador Três" type="number" placeholder="000" [(ngModel)]="ladoTres"></ion-input>
+  </ion-item>
+  <ion-button expand="block" fill="outline" (click)="verificarTriangulo()">É triangulo?</ion-button>
+  <h3>{{ehTriangulo}}</h3>
+  <ion-button expand="block" (click)="tipoDoTriangulo()">Tipo do triangulo</ion-button>
+  <h3>{{tipoTriangulo}}</h3>
+</ion-content>
